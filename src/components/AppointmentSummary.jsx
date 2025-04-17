@@ -20,13 +20,15 @@ export default function AppointmentSummary() {
       <ul className="space-y-4">
         {appointments.map((appt, index) => (
           <li key={index} className="border rounded p-4 bg-white shadow-sm">
-            <p className="font-medium">{appt.name}</p>
-            <p className="text-sm text-gray-600">
-              {appt.specialty} – {appt.location}
-            </p>
-            <p className="text-sm">
-              Time: <strong>{appt.time}</strong>
-            </p>
+            <div className="p-[1rem]">
+              <p className="font-medium">{appt.name}</p>
+              <p className="text-sm text-gray-600">
+                {appt.specialty} – {appt.location}
+              </p>
+              <p className="text-sm">
+                Time: <strong>{appt.time}</strong>
+              </p>
+            </div>
           </li>
         ))}
       </ul>

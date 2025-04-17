@@ -20,33 +20,37 @@ export default function DoctorDirectory({ onBook }) {
 
   return (
     <section className="mb-8">
-      <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-        <select
-          className="border px-3 py-2 rounded"
-          onChange={(e) => setSelectedSpecialty(e.target.value)}
-          value={selectedSpecialty}
-          aria-label="Filter by specialty"
-        >
-          <option value="">All Specialties</option>
-          {specialties.map((spec) => (
-            <option key={spec} value={spec}>
-              {spec}
-            </option>
-          ))}
-        </select>
+      <div className="flex justify-between gap-4 p-[1rem]">
+        <div className="w-1/2">
+          <select
+            className="w-full border px-3 py-2 rounded"
+            onChange={(e) => setSelectedSpecialty(e.target.value)}
+            value={selectedSpecialty}
+            aria-label="Filter by specialty"
+          >
+            <option value="">All Specialties</option>
+            {specialties.map((spec) => (
+              <option key={spec} value={spec}>
+                {spec}
+              </option>
+            ))}
+          </select>
+        </div>
 
-        <label className="inline-flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={onlyAvailable}
-            onChange={() => setOnlyAvailable((prev) => !prev)}
-            aria-label="Filter only available doctors"
-          />
-          Only Available
-        </label>
+        <div className="w-1/2 flex items-center justify-end">
+          <label className="inline-flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={onlyAvailable}
+              onChange={() => setOnlyAvailable((prev) => !prev)}
+              aria-label="Filter only available doctors"
+            />
+            Only Available
+          </label>
+        </div>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 ">
         {filteredDoctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} onBook={onBook} />
         ))}
