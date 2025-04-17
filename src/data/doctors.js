@@ -1,0 +1,38 @@
+export const doctors = [
+  {
+    id: 1,
+    name: "Dr. Ana González",
+    specialty: "Cardiology",
+    location: "Mexico City",
+    rating: 4.9,
+    availability: ["10:00", "11:00", "14:30"],
+    photo: "https://i.pravatar.cc/100?img=3",
+  },
+  {
+    id: 2,
+    name: "Dr. Luis Ramírez",
+    specialty: "Dermatology",
+    location: "Guadalajara",
+    rating: 4.7,
+    availability: ["09:30", "13:00"],
+    photo: "https://i.pravatar.cc/100?img=5",
+  },
+  {
+    id: 3,
+    name: "Dr. Elena Torres",
+    specialty: "Pediatrics",
+    location: "Monterrey",
+    rating: 4.8,
+    availability: [],
+    photo: "https://i.pravatar.cc/100?img=8",
+  },
+  {
+    id: 4,
+    name: "Dr. Javier López",
+    specialty: "Neurology",
+    location: "Tijuana",
+    rating: 4.5,
+    availability: ["08:00", "11:30", "15:00"],
+    photo: "https://i.pravatar.cc/100?img=10",
+  },
+];
