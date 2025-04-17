@@ -7,16 +7,19 @@ This project is a responsive and accessible front-end module for appointment boo
 ## Features
 
 ### Doctor Directory
+
 - Displays a list of doctors with photo, name, specialty, location, rating, and availability
 - Filter options for specialty and availability
 - Responsive layout with accessible interaction elements
 
 ### Booking Modal
+
 - Opens upon clicking "Book Appointment"
 - Shows the doctor's name and mock time slots
 - Users can select a time slot and confirm their appointment
 
 ### Appointment Summary
+
 - Lists all confirmed appointments with name, specialty, time, and location
 - Updates dynamically upon new bookings
 
@@ -94,3 +97,6 @@ src/
 
 This project is licensed under the MIT License. It is open for educational and internal development purposes.
 
+## Live Demo
+
+https://doctor-booking-invitro.vercel.app/
